@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratan Tata</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .container{
+
+        .container {
             margin: 80px 80px 20px 80px;
             display: flex;
         }
 
-        .image{
-            height: 400px;
-            width: 400px;
+        .image {
+            height: 300px;
+            width: 300px;
             border-radius: 50%;
             object-fit: cover;
         }
 
-        .image > img{
+        .image>img {
             border-radius: inherit;
         }
 
-        .details{
+        .details {
             padding: 10px 20px 20px 80px;
         }
 
-        .details h1{
+        .details h1 {
             margin-top: 8px;
         }
 
-        .details p{
+        .details p {
             margin-top: 12px;
         }
     </style>
@@ -43,13 +44,15 @@
 <body>
     <div class="container">
         <div class="image">
-            <img src="https://pbs.twimg.com/profile_images/1189494401359208448/AwbXHtpn_400x400.jpg" alt="image" height="300px" width="300px">
+            <img src="https://pbs.twimg.com/profile_images/1189494401359208448/AwbXHtpn_400x400.jpg" alt="image"
+                height="300px" width="300px">
         </div>
         <div class="details">
             <h1>Ratan Tata</h1>
             <p><i>Ratan Naval Tata is an Indian industrialist, philanthropist and former chairman of Tata Sons. He was a
-                chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through February
-                2017. He continues to head its charitable trusts.</i></p>
+                    chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through
+                    February
+                    2017. He continues to head its charitable trusts.</i></p>
             <p><b>Born:</b>28 December 1937 (age 85 years), Mumbai</p>
             <p><b>Education:</b> Harvard Business School (1975), MORE</p>
             <p><b>Organizations founded:</b> Tata Docomo, Tata Housing Development Company, Tata Teleservices</p>
@@ -57,6 +60,20 @@
             <p><b>Awards:</b> Order of Australia (2023), MORE</p>
         </div>
     </div>
+
+    <script>
+        let image = document.querySelector(".image");
+        let originalSrc = image.querySelector("img").src; // Save the original image source
+    
+        image.addEventListener('mouseover', () => {
+            image.querySelector("img").src = "ratan-tata.jpg"; // Change the image source on mouseover
+        });
+    
+        image.addEventListener('mouseout', () => {
+            image.querySelector("img").src = originalSrc; // Revert to the original image source on mouseout
+        });
+    </script>
+    
 </body>
 
 </html>
