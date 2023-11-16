@@ -57,23 +57,36 @@
             <p><b>Education:</b> Harvard Business School (1975), MORE</p>
             <p><b>Organizations founded:</b> Tata Docomo, Tata Housing Development Company, Tata Teleservices</p>
             <p><b>Parents:</b> Naval Tata, Sooni Tata</p>
-            <p><b>Awards:</b> Order of Australia (2023), MORE</p>
+            <p><b>Awards:</b> Order of Australia (2023), <a id="ratan-tata-wikipedia"
+                    href="https://en.wikipedia.org/wiki/Ratan_Tata" target="_blank">MORE</a></p>
         </div>
     </div>
 
     <script>
         let image = document.querySelector(".image");
         let originalSrc = image.querySelector("img").src; // Save the original image source
-    
+
         image.addEventListener('mouseover', () => {
             image.querySelector("img").src = "ratan-tata.jpg"; // Change the image source on mouseover
         });
-    
+
         image.addEventListener('mouseout', () => {
             image.querySelector("img").src = originalSrc; // Revert to the original image source on mouseout
         });
+
+        const ratanTataWikipedia = document.getElementById("ratan-tata-wikipedia");
+        ratanTataWikipedia.addEventListener('click', (event) => {
+            const confirmation = confirm("Do you want to open 'Ratan Tata Wikipedia' page?");
+            if (!confirmation) {
+                event.preventDefault(); // Prevent default action if not confirmed
+            } else {
+                ratanTataWikipedia.removeEventListener('click', handleClick); // Remove the event listener
+            }
+        });
+
+
     </script>
-    
+
 </body>
 
 </html>
