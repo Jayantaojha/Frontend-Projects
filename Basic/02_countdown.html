@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Countdown</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #counter {
+            /* background-color: yellow; */
+            margin: 80px 25px 25px 25px;
+            padding: 20px 20px 20px 40px;
+        }
+
+        #counter h1 span {
+            font-size: 140px;
+            padding-left: 55px;
+            /* display: block; */
+        }
+
+        #time-hour-min {
+            font-weight: 300;
+            font-size: 28px;
+            color: grey;
+            padding-left: 18px;
+        }
+
+        h3 {
+            color: black;
+            margin-top: 20px;
+            background-color: yellow;
+            font-size: 17px;
+            padding: 15px 2px 15px 19px;
+            border-radius: 6px;
+        }
+
+        #quote p {
+            background-color: rgb(192, 241, 255);
+            padding: 30px 20px;
+            margin: 0px 48px 0px 66px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this webpage is responsive -->
+    <div class="container">
+        <div id="counter">
+            <h1><span id="day-number"></span>days<br></h1> <span id="time-hour-min"></span>
+            <h3>Remaining time to change your life</h3>
+        </div>
+        <div id="quote">
+            <p><i>"The first and greatest victory is to conquar self" - Plato</i></p>
+        </div>
+    </div>
+
+    <script>
+        let dayNumber = document.querySelector("#day-number");
+        let timeHourMin = document.querySelector("#time-hour-min");
+
+        // converting string to required date format
+        let deadline = new Date("Feb 16, 2024 00:00:00").getTime();
+
+        function countdown() {
+            // getting the current time in required format
+            let now = new Date().getTime()
+
+            // calculating the difference
+            let distance = deadline - now;
+
+            // getting value of days, hours, minutes, seconds
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor(
+                (distance % (1000 * 60)) / 1000);
+
+            // Output the remaining time
+            dayNumber.innerHTML = days;
+            timeHourMin.innerHTML = `${hours} hours ${minutes} min ${seconds} sec`
+        }
+
+        setInterval(countdown, 1000);
+    </script>
+
+</body>
+
+</html>
