@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            background-color: #f7f4f4;
+        }
+        h1{
+            margin-top: 30px;
+        }
+
+        form{
+            background-color: #ffff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        .form-action{
+            text-align: left;
+            margin-top: 15px;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        .form-action label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-action input, select, textarea{
+            border: 1px solid #777;
+            border-radius: 2px;
+            padding: 10px;
+            display: block;
+            width: 90%;
+            font-size: 15px;
+        }
+
+        .form-action input[type = "radio"], 
+        .form-action input[type = "checkbox"]{
+            display: inline-block;
+            width: 40px;
+        }
+
+        button{
+            border: 1px solid #777;
+            font-size: 18px;
+            padding: 10px 24px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Self Analysis Form</h1>
+    <form id="form">
+
+        <div class="form-action">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-action">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-action">
+            <label for="age" id="label-age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form-action">
+            <label for="role" id="label-role">Which option best describes you?</label>
+            <!-- dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-action">
+            <label>Would you recommend SIT to a friend?</label>
+
+            <!-- input type radio button -->
+            <label for="recommend-1">
+                <input type="radio" name="recommend" id="recommend-1">Yes</input>
+            </label>
+
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommend">No</input>
+            </label>
+
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommend">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-action">
+            <label id="frameworks">Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <br>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring</input></label>
+        </div>
+
+        <div class="form-action">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+
+    </form>
+</body>
+
+</html>
