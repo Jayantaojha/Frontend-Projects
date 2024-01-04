@@ -19,20 +19,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="lg:bg-[#f7f0f1]">
+<body class="lg:bg-[#f7f0f1] *:scroll-smooth">
 
     <header style="background-image: url('laptop.jpg');"
         class="bg-cover aspect-video flex flex-col items-center place-content-around">
 
         <nav class="ml-auto mr-6 text-xl md:ml-2">
             <ul id="header-navbar" class="hidden md:block space-x-3 lg:space-x-12">
-                <a href="#" class="font-sans text-base font-bold text-[#e90e65] hover:text-[#e90e65] ">HOME</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">ABOUT</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">ACTIVITY</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">PROJECTS</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">TESTIMONIAL</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">BLOG</a>
-                <a href="#" class="font-sans text-base font-bold text-white hover:text-[#e90e65] ">CONTACT</a>
+                <a href="#" class="nav-links  font-sans text-base font-bold text-[#e90e65] hover:text-[#e90e65] hover:transition-[.5s]">HOME</a>
+                <a href="#about" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">ABOUT</a>
+                <a href="#activity" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">ACTIVITY</a>
+                <a href="#projects" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">PROJECTS</a>
+                <a href="#" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">TESTIMONIAL</a>
+                <a href="#social-media" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">BLOG</a>
+                <a href="#contact-me" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">CONTACT</a>
             </ul>
             <div class="block md:hidden">
                 <i id="header-icon" class="fa-solid fa-bars text-white cursor-pointer"></i>
@@ -74,7 +74,7 @@
                 </div>
 
                 <!-- card details -->
-                <div class=" bg-white rounded-xl rounded-t-none md:rounded-xl md:rounded-tl-none md:rounded-bl-none pl-6 pr-6 pt-4 flex flex-col justify-between gap-2 pb-5 lg:justify-evenly lg:gap-0">
+                <div class=" bg-white rounded-xl rounded-t-none md:rounded-xl md:rounded-tl-none md:rounded-bl-none pl-6 pr-6 pt-4 flex flex-col justify-between gap-2 pb-5 lg:justify-evenly lg:gap-0" id="about">
 
                     <h2 class="font-bold text-xl text-[#3d383a]">I AM JAYANTA OJHA</h2>
 
@@ -87,7 +87,7 @@
                         quis nostd exercitation ullamco laboris nisi ut aliquip ex ea mo consequat. Duis aute irure
                         dolor in reprehenderit in ullamco.</p>
 
-                    <button class="self-start bg-[#e90e65] hover:bg-[#e90e66c8] text-white pt-1 pb-1 pl-7 pr-7 rounded-2xl">CONTACT</button>
+                    <button class="self-start bg-[#e90e65] hover:bg-[#e90e66c8] text-white pt-1 pb-1 pl-7 pr-7 rounded-2xl"><a href="#contact-me">CONTACT</a></button>
 
                 </div>
 
@@ -103,7 +103,7 @@
             <!-- recent header start -->
             <div class="mb-7 flex justify-between">
                 <h2 class="text-white text-lg font-bold lg:text-[25px]">RECENT WORKS</h2>
-                <div>
+                <div id="recent-icon">
                     <i class="fa-solid fa-circle-arrow-left mr-1 text-white text-lg cursor-pointer lg:text-[22px]"></i>
                     <i class="fa-solid fa-circle-arrow-right text-white text-lg cursor-pointer lg:text-[22px]"></i>
                 </div>
@@ -117,7 +117,7 @@
             <div class="flex justify-between">
 
             <!-- first div -->
-            <div class="h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('macbook.jpg');">
+            <div class="recent-main-items h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('macbook.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -129,7 +129,7 @@
 
 
             <!-- second div -->
-            <div class="h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('man.jpg');">
+            <div class="recent-main-items h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('man.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -140,7 +140,7 @@
             </div>
 
             <!-- third div -->
-            <div class="h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('coding.jpg');">
+            <div class="recent-main-items h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('coding.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -151,7 +151,7 @@
             </div>
 
             <!-- fourth div -->
-            <div class="h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('rocket.jpg');">
+            <div class="recent-main-items h-[280px] w-[155px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('rocket.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -174,14 +174,14 @@
     </main>
 
     <!-- project start -->
-    <div id="main-2" class="bg-[#f2d5d7] lg:pt-6 pb-3">
+    <div id="projects" class="bg-[#f2d5d7] lg:pt-6 pb-3">
 
         <div class="m-5 mt-0 pt-5 lg:pb-10">
 
             <!-- project header start -->
             <div class="mb-7 flex justify-between">
                 <h2 class="text-[#584f53] text-lg font-bold lg:text-[25px]">PROJECTS</h2>
-                <div>
+                <div id="project-icon">
                     <i class="fa-solid fa-circle-arrow-left mr-1 text-[#584f53] text-lg cursor-pointer lg:text-[22px]"></i>
                     <i class="fa-solid fa-circle-arrow-right text-[#584f53] text-lg cursor-pointer lg:text-[22px]"></i>
                 </div>
@@ -195,7 +195,7 @@
             <div class="flex justify-between">
 
             <!-- first div -->
-            <div class="h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('food.jpg');">
+            <div class="project-main-items h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('food.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -207,7 +207,7 @@
 
 
             <!-- second div -->
-            <div class="h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('happinesss.jpg');">
+            <div class="project-main-items h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover" style="background-image: url('happinesss.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -218,7 +218,7 @@
             </div>
 
             <!-- third div -->
-            <div class="h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('bird.jpg');">
+            <div class="project-main-items h-[280px] w-[154px] lg:w-[340px] lg:h-[310px] rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('bird.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -229,7 +229,7 @@
             </div>
 
             <!-- fourth div -->
-            <div class="h-[280px] w-[154px] lg:w-[340px] lg:h-[310px]  rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('girl.jpg');">
+            <div class="project-main-items h-[280px] w-[154px] lg:w-[340px] lg:h-[310px]  rounded-xl p-4 bg-cover hidden md:block" style="background-image: url('girl.jpg');">
                 <div class="flex flex-col justify-between h-[270px]">
                     <i class="fa-regular fa-heart cursor-pointer text-white"></i>
                     <div class="mb-5">
@@ -253,7 +253,7 @@
 
     <!-- activity start -->
 
-    <div id="main-2" class="bg-[#f3e7e8] pb-24 lg:pt-6">
+    <div id="activity" class="bg-[#f3e7e8] pb-24 lg:pt-6">
 
         <div class="m-5 mt-0 pt-5">
 
@@ -360,7 +360,7 @@
     <!-- twitter ends -->
 
     <!-- find me start -->
-    <div class="h-[300px] bg-[#f7f0f1] flex flex-col justify-center">
+    <div class="h-[300px] bg-[#f7f0f1] flex flex-col justify-center" id="social-media">
         <h2 class="text-[#584f53] text-center font-bold text-lg md:text-[25px]">FIND ME ON SOCIAL MEDIA</h2>
         <div class="flex mt-6 md:mt-7 justify-center gap-x-7 text-[#584f53]">
             <div><i class="fa-brands fa-facebook text-[30px] md:text-[40px]  cursor-pointer hover:text-[#316FF6]"></i></div>
@@ -378,7 +378,7 @@
     <!-- map ends -->
 
     <!-- contact me form start -->
-    <div class="h-[626px] bg-[#e90e65] pl-[15px] pr-[15px] pt-[50px] md:pt-[60px]">
+    <div class="h-[626px] bg-[#e90e65] pl-[15px] pr-[15px] pt-[50px] md:pt-[60px]" id="contact-me">
         <div class="h-[526px] w-[330px] p-[35px] rounded-[25px] md:mt-0 md:mb-0 md:ml-auto md:mr-auto bg-white shadow-[0px_5px_10px_0px_rgba(0, 0, 0, 0.2)] flex flex-col justify-around  ml-auto mr-auto">
             <h2 class="text-center text-xl font-bold text-[#e90e65]">CONTACT ME</h2>
             <input type="text" name="" id="" placeholder="Your Name" class="bg-[#ebd8df] text-[15px] font-medium rounded-[25px] pt-4 pb-4 pl-8 pr-8 text-[#6c757d] border-none">
