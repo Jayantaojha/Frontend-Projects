@@ -31,12 +31,44 @@
                 <a href="#activity" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">ACTIVITY</a>
                 <a href="#projects" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">PROJECTS</a>
                 <a href="#" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">TESTIMONIAL</a>
-                <a href="#social-media" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">BLOG</a>
-                <a href="#contact-me" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">CONTACT</a>
+                <a href="blog.html" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">BLOG</a>
+                <a href="contact.html" class="nav-links  font-sans text-base font-bold text-white hover:text-[#e90e65] hover:transition-[.5s]">CONTACT</a>
             </ul>
+
+            <!-- nevigation menu icon-->
             <div class="block md:hidden">
-                <i id="header-icon" class="fa-solid fa-bars text-white cursor-pointer mt-2"></i>
+                <i id="header-icon" class="fa-solid fa-bars text-white cursor-pointer mt-2 fixed right-3"></i>
             </div>
+            
+            <!-- onhover container for nevigation menu -->
+            <div class="text-base w-[147px] h-[200px] bg-white absolute rounded-md p-3 top-10 right-3 hidden md:hidden z-10" id="nevigation-menu-container">
+
+                <div class="h-[100%] flex flex-col gap-[18px] text-[#525252]" id="menu-wrapper">
+
+                    <div id="menu1" class="font-medium">
+                        <i class="fa-solid fa-bell mr-3"></i>
+                        <a href="notifications.html">Notifications</a>
+                    </div>
+
+                    <div id="menu2" class="font-medium">
+                        <i class="fa-solid fa-heart mr-3"></i>
+                        <a href="wishlist.html">Wishlist</a>
+                    </div>
+
+                    <div id="menu3" class="font-medium">
+                        <i class="fa-solid fa-bolt mr-3"></i>
+                        <a href="recent.html">Recent</a>
+                    </div>
+
+                    <hr>
+
+                    <div id="menu3" class="font-medium">
+                        <a href="help.html">Help Center</a>
+                    </div>
+
+                </div>
+            </div>
+
         </nav>
 
         <div id="header-title" class="text-center py-8">

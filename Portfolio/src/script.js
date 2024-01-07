@@ -1,3 +1,27 @@
+// for nevigation menu icon
+const navIcon = document.getElementById('header-icon');
+const nevigationMenu = document.getElementById('nevigation-menu-container');
+
+let counter = 0;
+
+navIcon.addEventListener('click', () => {
+    if(counter === 0){
+        navIcon.classList.remove('fa-bars');
+        navIcon.classList.add('fa-xmark');
+        nevigationMenu.classList.remove('hidden');
+        counter = 1;
+    }
+    else if(counter === 1){
+        navIcon.classList.remove('fa-xmark');
+        navIcon.classList.add('fa-bars');
+        nevigationMenu.classList.add('hidden');
+
+        counter = 0;
+    }
+    
+})
+
+
 // js code for Recent Activity, Projects and Activity of the month | Slider -----------------------------
 
 class Curosal {
