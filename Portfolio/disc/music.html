@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="music.css">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#1e1e1a] text-white">
+
+    <header class="flex h-16 justify-between pl-3 pr-4 items-center ">
+        <div class="font-normal text-[#bcbcbb]">
+            <p>Good Morning,</p>
+            <p>Make Today Amazing!</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-magnifying-glass bg-[#302f28] p-2 rounded-[50%] text-[#bcbcbb]"></i>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- for today section -->
+        <div id="today" class="mt-3">
+            <div class="flex justify-between pt-2 pb-2 pr-4 pl-4">
+                <p class="font-normal text-[#bcbcbb]">Buzzing Today</p>
+                <p class="text-[#656253] text-sm">See all</p>
+            </div>
+
+            <div id="all-covers" class="flex justify-evenly gap-x-2 pl-2 mt-1">
+
+                <!-- cover1 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[100px] w-[100px] "><img src="./Music Player/feelingDown.jpg"></div>
+                    <p class="text-[14px] mt-1 text-[#bcbcbb]">Feeling Down</p>
+                    <p class="text-[12px] text-[#656253]">By Vaines</p>
+                </div>
+
+                <!-- cover2 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[100px] w-[100px]"><img src="./Music Player/the very first night.png"></div>
+                    <p class="text-[14px] mt-1 text-[#bcbcbb]">Belong With Me</p>
+                    <p class="text-[12px] text-[#656253]">By Taylor Shift</p>
+                </div>
+
+                <!-- cover3 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[100px] w-[100px]"><img src="./Music Player/Billie_Eilish_-_Happier_Than_Ever.png">
+                    </div>
+                    <p class="text-[14px] mt-1 text-[#bcbcbb]">Happier Than Ever</p>
+                    <p class="text-[12px] text-[#656253]">By Billie Eilish</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- today section ends here -->
+
+
+        <!-- for artist section -->
+        <div id="artist" class="mt-3">
+            <div class="flex justify-between pt-2 pb-2 pr-4 pl-4">
+                <p class="font-normal text-[#bcbcbb]">Artist</p>
+                <p class="text-[#656253] text-sm">See all</p>
+            </div>
+
+            <div id="all-artists" class="flex justify-evenly gap-x-2 pl-1 mt-1">
+
+                <!-- artist1 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[70px] w-[70px] rounded-[50%] overflow-hidden"><img src="./Music Player/alan.jpeg">
+                    </div>
+                    <p class="text-[12px] mt-1 text-center text-[#bcbcbb]">Alan Walker</p>
+
+                </div>
+
+                <!-- artist2 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[70px] w-[70px] rounded-[50%] overflow-hidden"><img src="./Music Player/taylor.jpeg">
+                    </div>
+                    <p class="text-[12px] mt-1 text-center text-[#bcbcbb]">Taylor Shift</p>
+
+                </div>
+
+                <!-- artist3 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[70px] w-[70px] rounded-[50%] overflow-hidden"><img src="./Music Player/justin.jpeg">
+                    </div>
+                    <p class="text-[12px] mt-1 text-center text-[#bcbcbb]">Juntin Bieber</p>
+
+                </div>
+
+                <!-- artist4 -->
+                <div class="flex flex-col content-center">
+                    <div class="h-[70px] w-[70px] rounded-[50%] overflow-hidden"><img src="./Music Player/weeknd.jpeg">
+                    </div>
+                    <p class="text-[12px] mt-1 text-center text-[#bcbcbb]">The Weeknd</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- artist section ends here -->
+
+
+
+        <!-- for recent tunes -->
+        <div id="artist" class="mt-3 pb-5">
+            <div class="flex justify-between pt-2 pb-2 pr-4 pl-4">
+                <p class="font-normal text-[#bcbcbb]">Recent Tunes</p>
+                <p class="text-[#656253] text-sm">See all</p>
+            </div>
+
+            <div id="all-tunes" class="flex flex-col">
+
+                <!-- tune1 -->
+                <div id="tune1" class="flex justify-between p-3 items-center">
+
+                    <div class="flex justify-between gap-x-4">
+                        <div class="h-[40px] w-[40px] rounded-[7px] overflow-hidden"><img
+                                src="./Music Player/onmyway.png"></div>
+
+                        <div>
+                            <p class="text-[#bcbcbb] text-[13px]">On My Way</p>
+                            <p class="text-[#656253] text-[11px]">Alan Walker</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between gap-x-4 items-center text-[#656253] text-[12px]">
+                        <p>3:14</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                </div>
+                <!-- tune 1 ends -->
+
+                <!-- tune2 -->
+                <div id="tune2" class="flex justify-between pl-3 pr-3 pb-2 pt-2 items-center">
+
+                    <div class="flex justify-between gap-x-4">
+                        <div class="h-[40px] w-[40px] rounded-[7px] overflow-hidden"><img
+                                src="./Music Player/unstoppable.jpeg"></div>
+
+                        <div>
+                            <p class="text-[#bcbcbb] text-[13px]">Unstoppable</p>
+                            <p class="text-[#656253] text-[11px]">Sia</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between gap-x-4 items-center text-[#656253] text-[12px]">
+                        <p>3:38</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                </div>
+                <!-- tune 2 ends -->
+
+
+                <!-- tune3 -->
+                <div id="tune3" class="flex justify-between pl-3 pr-3 pb-2 pt-2 items-center">
+
+                    <div class="flex justify-between gap-x-4">
+                        <div class="h-[40px] w-[40px] rounded-[7px] overflow-hidden"><img
+                                src="./Music Player/believer.jpg"></div>
+
+                        <div>
+                            <p class="text-[#bcbcbb] text-[13px]">Believer</p>
+                            <p class="text-[#656253] text-[11px]">Imagine Dragons</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between gap-x-4 items-center text-[#656253] text-[12px]">
+                        <p>3:25</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                </div>
+                <!-- tune 3 ends -->
+
+
+                <!-- tune4 -->
+                <div id="tune4" class="flex justify-between pl-3 pr-3 pb-2 pt-2 items-center">
+
+                    <div class="flex justify-between gap-x-4">
+                        <div class="h-[40px] w-[40px] rounded-[7px] overflow-hidden"><img
+                                src="./Music Player/senorita.png"></div>
+
+                        <div>
+                            <p class="text-[#bcbcbb] text-[13px]">Senorita</p>
+                            <p class="text-[#656253] text-[11px]">Shawn Mendes</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between gap-x-4 items-center text-[#656253] text-[12px]">
+                        <p>3:11</p>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                </div>
+                <!-- tune 4 ends -->
+
+
+            </div>
+
+
+        </div>
+        <!-- recent tunes ends here -->
+
+
+    </main>
+
+    <!-- for menu bar -->
+    <div id="menu-bar"
+        class="flex justify-around pt-4 pb-4 text-[#b1afa8] bg-[#656253] rounded-2xl fixed z-50 w-[70vw] top-[83vh] left-[60px]">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-music"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+    <!-- menu bar ends -->
+
+</body>
+
+</html>
